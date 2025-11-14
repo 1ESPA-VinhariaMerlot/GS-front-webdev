@@ -1,0 +1,63 @@
+.grid_equipes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.card_equipe {
+    background: #fff;
+    border: 1px solid #dfe3ea;
+    border-radius: 18px;
+    padding: 20px;
+    text-decoration: none;
+    color: #0f172a;
+    transition: 0.2s;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card_equipe:hover {
+    background: #eef4ff;
+}
+
+.icone_equipe {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: #8383bc;
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 10px;
+}
+
+.nome_equipe {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.area_equipe {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 10px;
+}
+
+.membros_contador {
+    font-size: 14px;
+    font-weight: 600;
+    color: #383D59;
+}
+
+.descricao_equipe {
+    font-size: 13px;
+    color: #475569;
+    line-height: 1.4;
+    margin-top: 6px;
+    flex: 1;
+}
