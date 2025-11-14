@@ -1,0 +1,140 @@
+.slideshow_container {
+    position: relative;
+    background: #fff;
+    border: 1px solid #dfe3ea;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+}
+
+.slide {
+  display: none;
+  animation: fade 0.8s ease;
+}
+
+.slide_ativo {
+  display: block;
+}
+
+.avatar_grande {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.cargo {
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.info_slide {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.info_slide h4 {
+  color: #383D59;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.info_slide p {
+  font-size: 14px;
+  color: #383D59;
+  margin-bottom: 8px;
+}
+
+.acoes_slide {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.botao_slide {
+  background-color: #fff;
+  color: #383D59;
+  border: 2px solid #383D59;
+  border-radius: 100px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.botao_slide:hover {
+  background-color: #e2e8f0;
+}
+
+.anterior,
+.proximo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #383D59;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.anterior:hover,
+.proximo:hover {
+  background: #383D59;
+}
+
+.anterior { left: 10px; }
+.proximo { right: 10px; }
+
+@keyframes fade {
+  from { opacity: 0.5; }
+  to { opacity: 1; }
+}
+
+.grade_funcionarios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.card_funcionario {
+  flex: 0 0 calc(50% - 10px);
+  background: #fff;
+  border: 1px solid #dfe3ea;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  transition: transform .2s ease;
+}
+
+.card_funcionario:hover {
+  transform: translateY(-4px);
+}
+
+.card_funcionario img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card_funcionario h3 {
+  font-size: 18px;
+  color: #383D59;
+}
+
+.card_funcionario p {
+  font-size: 14px;
+  color: #383D59;
+}
+

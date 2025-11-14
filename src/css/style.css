@@ -32,6 +32,9 @@ header {
 
 .coluna_esquerda {
     flex: 0 0 250px;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
 }
 
 .lado_esquerdo {
@@ -182,6 +185,9 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
 }
 
 .caixa_direita {
