@@ -7,7 +7,7 @@
 .card_equipe {
     background: #fff;
     border: 1px solid #dfe3ea;
-    border-radius: 18px;
+    border-radius: 10px;
     padding: 20px;
     text-decoration: none;
     color: #0f172a;
@@ -26,8 +26,8 @@
 .icone_equipe {
     width: 52px;
     height: 52px;
-    border-radius: 14px;
-    background: #8383bc;
+    border-radius: 10px;
+    background: #85b8b9;
     color: #fff;
     font-weight: 700;
     font-size: 22px;

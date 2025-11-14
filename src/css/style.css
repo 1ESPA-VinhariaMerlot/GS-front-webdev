@@ -40,7 +40,7 @@ header {
 .lado_esquerdo {
     background: #fff;
     border: 1px solid #dfe3ea;
-    border-radius: 14px;
+    border-radius: 10px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -109,7 +109,7 @@ header {
 .barra_publicacao {
     background: #fff;
     border: 1px solid #dfe3ea;
-    border-radius: 14px;
+    border-radius: 10px;
     padding: 12px 16px;
     display: flex;
     align-items: center;
@@ -153,7 +153,7 @@ header {
 .post {
     background: #fff;
     border: 1px solid #dfe3ea;
-    border-radius: 14px;
+    border-radius: 10px;
     padding: 16px;
     box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
 }
@@ -211,7 +211,7 @@ header {
 .caixa_direita {
     background: #fff;
     border: 1px solid #dfe3ea;
-    border-radius: 14px;
+    border-radius: 10px;
     padding: 16px;
     text-align: center;
     box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
@@ -251,7 +251,7 @@ header {
 .sessao_mensagem {
     background: #fff;
     border: 1px solid #dfe3ea;
-    border-radius: 14px;
+    border-radius: 10px;
     padding: 16px;
     box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
 }
