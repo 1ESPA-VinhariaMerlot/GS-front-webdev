@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificações</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/notificacoes.css">
+</head>
+<body>
+    <header>
+        <h1>WorkWell</h1>
+    </header>
+    <main>
+        <div class="box_principal">
+            <section class="coluna_esquerda">
+                <aside class="lado_esquerdo">
+                    <div class="logo_icone">W</div>
+                    <strong>WorkWellS</strong>
+                    <div class="barra_pesquisa">
+                        <span class="pesquisa_icone">
+                            <svg width="16" height="16" fill="#94a3b8" viewBox="0 0 24 24">
+                                <path d="M10 2a8 8 0 015.292 13.708l4.5 4.5-1.415 1.414-4.5-4.5A8 8 0 1110 2zm0 2a6 6 0 100 12 6 6 0 000-12z"/>
+                            </svg>
+                        </span>
+                        <input type="text" placeholder="Pesquisar" aria-label="Pesquisar"/>
+                    </div>
+                    <nav class="navegador">
+                        <a href="index.html">Home</a>
+                        <a href="colaboradores.html">Colaboradores</a>
+                        <a href="equipes.html">Equipes</a>
+                        <a href="#">Acompanhamentos</a>
+                        <a href="#">Notificações</a>
+                    </nav>
+                </aside>
+            </section>
+            <section class="coluna_centro">
+                <div class="linha_filtro">
+                    <span><strong>Notificações</strong></span>
+                    <hr>
+                </div>
+                <div class="lista_notificacoes">
+                    <div class="notificacao_card">
+                        <div class="icon_alerta">!</div>
+                        <div class="conteudo">
+                            <h3>Prazo de relatório próximo</h3>
+                            <p>O relatório semanal de produtividade estará vencendo em 2 dias.</p>
+                            <span class="time">Há 3 horas</span>
+                        </div>
+                    </div>
+                    <div class="notificacao_card">
+                        <div class="icon_alerta verde">✓</div>
+                        <div class="conteudo">
+                            <h3>Meta da equipe alcançada</h3>
+                            <p>A equipe de Desenvolvimento atingiu 92% da meta do mês.</p>
+                            <span class="time">Ontem</span>
+                        </div>
+                    </div>
+                    <div class="notificacao_card">
+                        <div class="icon_alerta amarelo">⚠</div>
+                        <div class="conteudo">
+                            <h3>Queda de desempenho detectada</h3>
+                            <p>Redução de 18% na produtividade da Equipe de Suporte.</p>
+                            <span class="time">Há 2 dias</span>
+                        </div>
+                    </div>
+                    <div class="notificacao_card">
+                        <div class="icon_alerta">!</div>
+                        <div class="conteudo">
+                            <h3>Atividade pendente</h3>
+                            <p>3 colaboradores ainda não completaram o formulário semanal.</p>
+                            <span class="time">Há 5 dias</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="coluna_direita">
+            <aside class="caixa_direita">
+                <div class="painel">
+                    <img src="./src/assets/foto2.png" alt="icone de usuario" class="avatar"/>
+                    <div class="nome_perfil">Usuário</div>
+                    <div class="atribuicao">Analista</div>
+                    <button class="botao">Ver perfil</button>
+                </div>
+            </aside>
+            <section class="sessao_mensagem">
+                <h3>Mensagens recebidas</h3>
+
+                <div class="lista_mensagens">
+                    <div class="mensagem">
+                        <img src="./src/assets/foto1.png" class="avatar_mensagem"/>
+                        <div>
+                            <strong>Ana Paula</strong>
+                            <p class="caixa_pequena">Oi! Gostei do seu último post 😄</p>
+                        </div>
+                    </div>
+
+                    <div class="mensagem">
+                        <img src="./src/assets/foto2.png" class="avatar_mensagem"/>
+                        <div>
+                            <strong>Lucas Henrique</strong>
+                            <p class="caixa_pequena">Podemos conversar sobre a vaga?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="botao_mensagens">Ver todas</button>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
