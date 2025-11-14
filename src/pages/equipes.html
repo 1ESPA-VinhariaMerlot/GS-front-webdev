@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipes</title>
+</head>
+<body>
+    <header>
+        <h1>WorkWell</h1>
+    </header>
+    <main>
+        <div class="box_principal">
+            <section class="coluna_esquerda">
+                <aside class="lado_esquerdo">
+                    <div class="logo_icone">W</div>
+                    <strong>WorkWellS</strong> 
+                    <div class="barra_pesquisa">
+                        <span class="pesquisa_icone">
+                            <svg width="16" height="16" fill="#94a3b8" viewBox="0 0 24 24">
+                                <path d="M10 2a8 8 0 015.292 13.708l4.5 4.5-1.415 1.414-4.5-4.5A8 8 0 1110 2zm0 2a6 6 0 100 12 6 6 0 000-12z"/>
+                            </svg>
+                        </span>
+                        <input type="text" placeholder="Pesquisar" aria-label="Pesquisar"/>
+                    </div>
+                    <nav class="navegador">
+                        <a href="index.html">Home</a>
+                        <a href="./src/pages/colaboradores.html">Colaboradores</a> 
+                        <a href="#">Equipes</a>
+                        <a href="#">Acompanhamentos</a>
+                        <a href="#">Notificações</a>
+                    </nav>
+                </aside>
+            </section>
+            <section class="coluna_centro">
+                <div class="grid_equipes">
+                     <div class="card_equipe" data-equipe="tech">
+                        <div>
+                            <div class="icone_equipe">T</div>
+                            <h3 class="nome_equipe">Equipe Tech</h3>
+                            <p class="area_equipe">Desenvolvimento & Infraestrutura</p>
+                        </div>
+                        <div>
+                            <p class="membros_contador" data-membros="tech"></p>
+                            <p class="descricao_equipe">Responsáveis por sistemas internos, aplicativos e infraestrutura da companhia.</p>
+                        </div>
+                    </div>
+                    <div class="card_equipe" data-equipe="design">
+                        <div>
+                            <div class="icone_equipe">D</div>
+                            <h3 class="nome_equipe">Design & UX</h3>
+                            <p class="area_equipe">Experiência do Usuário</p>
+                        </div>
+                        <div>
+                            <p class="membros_contador" data-membros="design"></p>
+                            <p class="descricao_equipe">Criação de interfaces, identidades visuais e melhoria da experiência do usuário.</p>
+                        </div>
+                    </div>
+                    <div class="card_equipe" data-equipe="rh">
+                        <div>
+                            <div class="icone_equipe">R</div>
+                            <h3 class="nome_equipe">Recursos Humanos</h3>
+                            <p class="area_equipe">Pessoas & Cultura</p>
+                        </div>
+                        <div>
+                            <p class="membros_contador" data-membros="rh"></p>
+                            <p class="descricao_equipe">Gestão de talentos, cultura organizacional e bem-estar corporativo.</p>
+                        </div>
+                    </div>
+                    <div class="card_equipe" data-equipe="marketing">
+                        <div>
+                            <div class="icone_equipe">M</div>
+                            <h3 class="nome_equipe">Marketing</h3>
+                            <p class="area_equipe">Comunicação & Branding</p>
+                        </div>
+                        <div>
+                            <p class="membros_contador" data-membros="marketing"></p>
+                            <p class="descricao_equipe">Estratégias de comunicação, campanhas e fortalecimento da marca.</p>
+                        </div>
+                    </div>
+                    <div class="card_equipe" data-equipe="comercial">
+                        <div>
+                            <div class="icone_equipe">C</div>
+                            <h3 class="nome_equipe">Comercial</h3>
+                            <p class="area_equipe">Vendas & Relacionamento</p>
+                        </div>
+                        <div>
+                            <p class="membros_contador" data-membros="comercial"></p>
+                            <p class="descricao_equipe">Relacionamento com clientes, oportunidades de negócio e expansão de mercado.</p>
+                        </div>
+                    </div>
+                    <div class="card_equipe" data-equipe="financeiro">
+                        <div>
+                            <div class="icone_equipe">F</div>
+                            <h3 class="nome_equipe">Financeiro</h3>
+                            <p class="area_equipe">Gestão Orçamentária</p>
+                        </div>
+                        <div>
+                            <p class="membros_contador" data-membros="financeiro"></p>
+                            <p class="descricao_equipe">Controle de orçamento, salários, contas e análises financeiras estratégicas.</p>
+                        </div>
+                    </div>
+                    <div class="card_equipe" data-equipe="projetos">
+                        <div>
+                            <div class="icone_equipe">P</div>
+                            <h3 class="nome_equipe">Gestão de Projetos</h3>
+                            <p class="area_equipe">Planejamento & Execução</p>
+                        </div>
+                        <div>
+                            <p class="membros_contador" data-membros="projetos"></p>
+                            <p class="descricao_equipe">Organização, cronogramas e execução de iniciativas internas.</p>
+                        </div>
+                    </div>
+                    <div class="card_equipe" data-equipe="suporte">
+                        <div>
+                            <div class="icone_equipe">S</div>
+                            <h3 class="nome_equipe">Suporte</h3>
+                            <p class="area_equipe">Atendimento Interno</p>
+                        </div>
+                        <div>
+                            <p class="membros_contador" data-membros="suporte"></p>
+                            <p class="descricao_equipe">Atendimento técnico e suporte direto a colaboradores e setores.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="coluna_direita">
+                <aside class="caixa_direita">
+                    <div class="painel">
+                        <img src="./src/assets/foto2.png" alt="icone de usuario" class="avatar" aria-hidden="true"/>
+                        <div class="nome_perfil">Usuário</div>
+                        <div class="atribuicao">Analista</div>
+                        <div class="status"></div>
+                        <div>
+                            <strong>200</strong><br />
+                            <span class="atribuicao">conexões</span>
+                        </div>
+                        <div>
+                            <strong>15</strong><br />
+                            <span class="atribuicao">conquistas</span>
+                        </div>
+                        <div>
+                            <strong>3</strong><br />
+                            <span class="atribuicao">feedbacks</span>
+                        </div>
+                        <button class="botao">Ver perfil</button>
+                    </div>
+                </aside>
+                <section class="sessao_mensagem" aria-labelledby="titulo_mensagens">
+                    <h3 id="titulo_mensagens">Mensagens recebidas</h3>
+
+                    <div class="lista_mensagens">
+                        <div class="mensagem">
+                            <img src="./src/assets/foto1.png" alt="icone de usuario" class="avatar_mensagem" aria-hidden="true"/>
+                            <div>
+                                <strong>Ana Paula</strong>
+                                <p class="caixa_pequena">Oi! Gostei do seu último post 😄</p>
+                            </div>
+                        </div>
+
+                        <div class="mensagem">
+                            <img src="./src/assets/foto2.png" alt="icone de usuario" class="avatar_mensagem" aria-hidden="true"/>
+                            <div>
+                                <strong>Lucas Henrique</strong>
+                                <p class="caixa_pequena">Podemos conversar sobre a vaga?</p>
+                            </div>
+                        </div>
+
+                        <div class="mensagem">
+                            <img src="./src/assets/foto4.png" alt="icone de usuario" class="avatar_mensagem" aria-hidden="true"/>
+                            <div>
+                                <strong>Equipe RH</strong>
+                                <p class="caixa_pequena">Reunião de feedback amanhã às 10h.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="botao_mensagens">Ver todas</button>
+                </section>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
