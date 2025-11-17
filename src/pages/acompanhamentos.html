@@ -29,11 +29,13 @@
                         </svg>
                     </button>
                 </a>
-                <button class="menu_btn">
-                    <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2a6 6 0 00-6 6v4.586L4.293 15.293 5.707 16.707 7 15.414V16a5 5 0 0010 0v-.586l1.293 1.293 1.414-1.414L18 12.586V8a6 6 0 00-6-6z"/>
-                    </svg>
-                </button>
+                <a href="./notificacoes.html">
+                    <button class="menu_btn">
+                        <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2a6 6 0 00-6 6v4.586L4.293 15.293 5.707 16.707 7 15.414V16a5 5 0 0010 0v-.586l1.293 1.293 1.414-1.414L18 12.586V8a6 6 0 00-6-6z"/>
+                        </svg>
+                    </button>
+                </a>
                 <button class="menu_btn">
                     <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 12a5 5 0 100-10 5 5 0 000 10zm-9 9a9 9 0 1118 0H3z"/>
@@ -73,63 +75,144 @@
                 <div class="grid_acompanhamentos">
                     <div class="card_metricas">
                         <div class="topo_card">
-                            <div class="icone_card"><img src="../assets/image2.png" alt="" class="icone_card"></div>
-                            <h3>Produtividade Geral</h3>
+                            <div>
+                                <h3 class="card_titulo">Lançamento Nova Feature</h3>
+                                <p class="card_descricao">
+                                    Desenvolvimento e implementação do módulo de analytics avançado
+                                </p>
+                            </div>
+                            <div class="status status_blue">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 17l6-6 4 4 8-8" />
+                                </svg>
+                                <span>Em Andamento</span>
+                            </div>
                         </div>
-                        <p class="descricao">Análise de desempenho médio dos colaboradores no mês.</p>
-                        <div class="progresso_container">
-                            <div class="progresso_barra" style="width: 72%;"></div>
+                        <div class="progress_titulo">
+                            <span>Progresso</span>
+                            <strong>75%</strong>
                         </div>
-                        <span class="percentual">72%</span>
+                        <div class="progress_barra">
+                            <div class="progress_filtro progress_azul" style="width: 75%;"></div>
+                        </div>
+                        <div class="info_grid">
+                            <div>
+                                <p class="info">Prazo</p>
+                                <p class="info_valor">15/12/2024</p>
+                            </div>
+                            <div>
+                                <p class="info">Responsável</p>
+                                <p class="info_valor">Ana Silva</p>
+                            </div>
+                        </div>
+                        <div class="info_grid">
+                            <button class="btn_azul">Ver Detalhes</button>
+                            <button class="btn">Atualizar</button>
+                        </div>
                     </div>
                     <div class="card_metricas">
                         <div class="topo_card">
-                            <div class="icone_card"><img src="../assets/image1.png" alt="" class="icone_card"></div>
-                            <h3>Feedbacks Realizados</h3>
+                            <div>
+                                <h3 class="card_titulo">Treinamento de Liderança</h3>
+                                <p class="card_descricao">
+                                    Programa interno de desenvolvimento de líderes
+                                </p>
+                            </div>
+                            <div class="status status_yellow">
+                                <span>Aguardando</span>
+                            </div>
                         </div>
-                        <p class="descricao">Quantidade de feedbacks enviados entre áreas e equipes.</p>
-                        <div class="numero_grande">128</div>
+                        <div class="progress_titulo">
+                            <span>Progresso</span>
+                            <strong>20%</strong>
+                        </div>
+                        <div class="progress_barra">
+                            <div class="progress_filtro" style="width: 20%; background:#eab308;"></div>
+                        </div>
+                        <div class="info_grid">
+                            <div>
+                                <p class="info">Prazo</p>
+                                <p class="info_valor">30/11/2024</p>
+                            </div>
+                            <div>
+                                <p class="info">Responsável</p>
+                                <p class="info_valor">Marcos Oliveira</p>
+                            </div>
+                        </div>
+                        <div class="info_grid">
+                            <button class="btn_azul">Ver Detalhes</button>
+                            <button class="btn">Atualizar</button>
+                        </div>
                     </div>
                     <div class="card_metricas">
                         <div class="topo_card">
-                            <div class="icone_card"><img src="../assets/image3.png" alt="" class="icone_card"></div>
-                            <h3>Engajamento Interno</h3>
+                            <div>
+                                <h3 class="card_titulo">Pesquisa de Clima</h3>
+                                <p class="card_descricao">
+                                    Coleta e análise de dados de satisfação dos colaboradores
+                                </p>
+                            </div>
+                            <div class="status status_green">
+                                <span>Concluído</span>
+                            </div>
                         </div>
-                        <p class="descricao">Acompanhamento das interações em postagens internas.</p>
-                        <div class="progresso_container">
-                            <div class="progresso_barra" style="width: 86%;"></div>
+                        <div class="progress_titulo">
+                            <span>Progresso</span>
+                            <strong>100%</strong>
                         </div>
-                        <span class="percentual">86%</span>
+                        <div class="progress_barra">
+                            <div class="progress_filtro" style="width: 100%; background:#16a34a;"></div>
+                        </div>
+                        <div class="info_grid">
+                            <div>
+                                <p class="info">Prazo</p>
+                                <p class="info_valor">01/10/2024</p>
+                            </div>
+                            <div>
+                                <p class="info">Responsável</p>
+                                <p class="info_valor">Equipe RH</p>
+                            </div>
+                        </div>
+                        <div class="info_grid">
+                            <button class="btn_azul">Ver Detalhes</button>
+                            <button class="btn">Atualizar</button>
+                        </div>
                     </div>
                     <div class="card_metricas">
                         <div class="topo_card">
-                            <div class="icone_card"><img src="../assets/image4.png" alt="" class="icone_card"></div>
-                            <h3>Reconhecimentos</h3>
+                            <div>
+                                <h3 class="card_titulo">Integração de Novos Colaboradores</h3>
+                                <p class="card_descricao">
+                                    Preparação e acompanhamento dos novos membros da equipe
+                                </p>
+                            </div>
+                            <div class="status status_red">
+                                <span>Atrasado</span>
+                            </div>
                         </div>
-                        <p class="descricao">Contagem de elogios, conquistas e menções positivas.</p>
-                        <div class="numero_grande">42</div>
-                    </div>
-                                <div class="card_metricas">
-                        <div class="topo_card">
-                            <div class="icone_card"><img src="../assets/image3.png" alt="" class="icone_card"></div>
-                            <h3>Presença & Pontualidade</h3>
+                        <div class="progress_titulo">
+                            <span>Progresso</span>
+                            <strong>40%</strong>
                         </div>
-                        <p class="descricao">Controle geral de presença dos colaboradores.</p>
-                        <div class="progresso_container">
-                            <div class="progresso_barra" style="width: 95%;"></div>
+                        <div class="progress_barra">
+                            <div class="progress_filtro" style="width: 40%; background:#dc2626;"></div>
                         </div>
-                        <span class="percentual">95%</span>
-                    </div>
-                    <div class="card_metricas">
-                        <div class="topo_card">
-                            <div class="icone_card"><img src="../assets/image4.png" alt="" class="icone_card"></div>
-                            <h3>Progresso de Projetos</h3>
+                        <div class="info_grid">
+                            <div>
+                                <p class="info">Prazo</p>
+                                <p class="info_valor">05/01/2025</p>
+                            </div>
+                            <div>
+                                <p class="info">Responsável</p>
+                                <p class="info_valor">Juliana Souza</p>
+                            </div>
                         </div>
-                        <p class="descricao">Taxa média de execução dos projetos ativos.</p>
-                        <div class="progresso_container">
-                            <div class="progresso_barra" style="width: 87%;"></div>
+                        <div class="info_grid">
+                            <button class="btn_azul">Ver Detalhes</button>
+                            <button class="btn">Atualizar</button>
                         </div>
-                        <span class="percentual">87%</span>
                     </div>
                 </div>
             </section>

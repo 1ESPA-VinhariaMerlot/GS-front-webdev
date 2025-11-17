@@ -22,16 +22,20 @@
                 </span>
             </div>
             <nav class="header_menu">
-                <button class="menu_btn ativo">
-                    <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M3 10l9-7 9 7v10a2 2 0 01-2 2h-4a2 2 0 01-2-2v-4H9v4a2 2 0 01-2 2H3z"/>
-                    </svg>
-                </button>
-                <button class="menu_btn">
-                    <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2a6 6 0 00-6 6v4.586L4.293 15.293 5.707 16.707 7 15.414V16a5 5 0 0010 0v-.586l1.293 1.293 1.414-1.414L18 12.586V8a6 6 0 00-6-6z"/>
-                    </svg>
-                </button>
+                <a href="/index.html">
+                    <button class="menu_btn">
+                        <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M3 10l9-7 9 7v10a2 2 0 01-2 2h-4a2 2 0 01-2-2v-4H9v4a2 2 0 01-2 2H3z"/>
+                        </svg>
+                    </button>
+                </a>
+                <a href="./notificacoes.html">
+                    <button class="menu_btn">
+                        <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2a6 6 0 00-6 6v4.586L4.293 15.293 5.707 16.707 7 15.414V16a5 5 0 0010 0v-.586l1.293 1.293 1.414-1.414L18 12.586V8a6 6 0 00-6-6z"/>
+                        </svg>
+                    </button>
+                </a>
                 <button class="menu_btn">
                     <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 12a5 5 0 100-10 5 5 0 000 10zm-9 9a9 9 0 1118 0H3z"/>
@@ -68,37 +72,113 @@
                     <span><strong>Notificações</strong></span>
                     <hr>
                 </div>
-                <div class="lista_notificacoes">
-                    <div class="notificacao_card">
-                        <div class="icon_alerta">!</div>
-                        <div class="conteudo">
-                            <h3>Prazo de relatório próximo</h3>
-                            <p>O relatório semanal de produtividade estará vencendo em 2 dias.</p>
-                            <span class="time">Há 3 horas</span>
+                <div class="card_lista">
+                    <div class="notificacao nao_lida">
+                        <div class="icone_notificacao bg-blue"></div>
+                        <div class="conteudo_notificacao">
+                            <div class="topo_notificacao">
+                                <h4 class="titulo_notificacao">Nova mensagem</h4>
+                                <span class="data_notificacao">há 2 minutos</span>
+                            </div>
+                            <p class="texto_notificacao">Ana Silva enviou uma mensagem sobre o projeto de redesign</p>
+                            <p class="usuario_notificacao">Ana Silva</p>
+                        </div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="notificacao nao_lida">
+                        <div class="icone_notificacao bg-red"></div>
+                        <div class="conteudo_notificacao">
+                            <div class="topo_notificacao">
+                                <h4 class="titulo_notificacao">Sua postagem recebeu uma curtida</h4>
+                                <span class="data_notificacao">há 15 minutos</span>
+                            </div>
+                            <p class="texto_notificacao">Carlos Santos curtiu sua atualização sobre o novo roadmap</p>
+                            <p class="usuario_notificacao">Carlos Santos</p>
+                        </div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="notificacao nao_lida">
+                        <div class="icone_notificacao bg-green"></div>
+                        <div class="conteudo_notificacao">
+                            <div class="topo_notificacao">
+                                <h4 class="titulo_notificacao">Nova conexão</h4>
+                                <span class="data_notificacao">há 1 hora</span>
+                            </div>
+                            <p class="texto_notificacao">Maria Oliveira aceitou seu convite para conectar</p>
+                            <p class="usuario_notificacao">Maria Oliveira</p>
+                        </div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="notificacao">
+                        <div class="icone_notificacao bg-emerald"></div>
+                        <div class="conteudo_notificacao">
+                            <div class="topo_notificacao">
+                                <h4 class="titulo_notificacao">Meta concluída</h4>
+                                <span class="data_notificacao">há 2 horas</span>
+                            </div>
+                            <p class="texto_notificacao">Parabéns! Você concluiu a meta de finalizar o módulo de analytics</p>
                         </div>
                     </div>
-                    <div class="notificacao_card">
-                        <div class="icon_alerta_verde">✓</div>
-                        <div class="conteudo">
-                            <h3>Meta da equipe alcançada</h3>
-                            <p>A equipe de Desenvolvimento atingiu 92% da meta do mês.</p>
-                            <span class="time">Ontem</span>
+                    <div class="notificacao">
+                        <div class="icone_notificacao bg-purple"></div>
+                        <div class="conteudo_notificacao">
+                            <div class="topo_notificacao">
+                                <h4 class="titulo_notificacao">Lembrete de evento</h4>
+                                <span class="data_notificacao">há 3 horas</span>
+                            </div>
+                            <p class="texto_notificacao">Reunião de alinhamento do time começará em 30 minutos</p>
                         </div>
                     </div>
-                    <div class="notificacao_card">
-                        <div class="icon_alerta_amarelo">⚠</div>
-                        <div class="conteudo">
-                            <h3>Queda de desempenho detectada</h3>
-                            <p>Redução de 18% na produtividade da Equipe de Suporte.</p>
-                            <span class="time">Há 2 dias</span>
+                    <div class="notificacao">
+                        <div class="icone_notificacao bg-yellow"></div>
+                        <div class="conteudo_notificacao">
+                            <div class="topo_notificacao">
+                                <h4 class="titulo_notificacao">Nova conquista desbloqueada</h4>
+                                <span class="data_notificacao">há 5 horas</span>
+                            </div>
+                            <p class="texto_notificacao">Você alcançou 100 conexões! Continue contribuindo com a comunidade</p>
                         </div>
                     </div>
-                    <div class="notificacao_card">
-                        <div class="icon_alerta">!</div>
-                        <div class="conteudo">
-                            <h3>Atividade pendente</h3>
-                            <p>3 colaboradores ainda não completaram o formulário semanal.</p>
-                            <span class="time">Há 5 dias</span>
+                    <div class="notificacao">
+                        <div class="icone_notificacao bg-orange"></div>
+                        <div class="conteudo_notificacao">
+                            <div class="topo_notificacao">
+                                <h4 class="titulo_notificacao">Prazo próximo</h4>
+                                <span class="data_notificacao">há 6 horas</span>
+                            </div>
+                            <p class="texto_notificacao">A meta "Atualização Documentação" vence em 2 dias</p>
+                        </div>
+                    </div>
+                    <div class="notificacao">
+                        <div class="icone_notificacao bg-indigo"></div>
+                        <div class="conteudo_notificacao">
+                            <div class="topo_notificacao">
+                                <h4 class="titulo_notificacao">Progresso em meta</h4>
+                                <span class="data_notificacao">há 8 horas</span>
+                            </div>
+                            <p class="texto_notificacao">Você alcançou 75% do progresso na meta "Lançamento Nova Feature"</p>
+                        </div>
+                    </div>
+                    <div class="notificacao">
+                        <div class="icone_notificacao bg-blue"></div>
+                        <div class="conteudo_notificacao">
+                            <div class="topo_notificacao">
+                                <h4 class="titulo_notificacao">Nova mensagem</h4>
+                                <span class="data_notificacao">há 1 dia</span>
+                            </div>
+                            <p class="texto_notificacao">Pedro Costa comentou na sua postagem sobre otimização de performance</p>
+                            <p class="usuario_notificacao">Pedro Costa</p>
+                        </div>
+                    </div>
+                    <div class="notificacao">
+                        <div class="icone_notificacao bg-green"></div>
+                        <div class="conteudo_notificacao">
+                            <div class="topo_notificacao">
+                                <h4 class="titulo_notificacao">Nova conexão</h4>
+                                <span class="data_notificacao">há 2 dias</span>
+                            </div>
+                            <p class="texto_notificacao">Gustavo Pereira se conectou com você</p>
+                            <p class="usuario_notificacao">Gustavo Pereira</p>
                         </div>
                     </div>
                 </div>
