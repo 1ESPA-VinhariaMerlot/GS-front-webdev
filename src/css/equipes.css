@@ -1,63 +1,96 @@
-.grid_equipes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 22px;
+.equipes_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 20px;
 }
 
-.card_equipe {
-    background: #fff;
-    border: 1px solid #dfe3ea;
-    border-radius: 10px;
-    padding: 20px;
-    text-decoration: none;
+.header_equipes {
+    margin-bottom: 28px;
+}
+
+.titulo_equipes {
+    font-size: 2rem;
+    font-weight: 700;
     color: #0f172a;
-    transition: 0.2s;
-    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
-    height: 240px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card_equipe:hover {
-    background: #eef4ff;
-}
-
-.icone_equipe {
-    width: 52px;
-    height: 52px;
-    border-radius: 10px;
-    background: #85b8b9;
-    color: #fff;
-    font-weight: 700;
-    font-size: 22px;
-    display: grid;
-    place-items: center;
-    margin-bottom: 10px;
-}
-
-.nome_equipe {
-    font-size: 18px;
-    font-weight: 700;
     margin-bottom: 4px;
 }
 
-.area_equipe {
-    font-size: 14px;
+.subtitulo_equipes {
     color: #64748b;
-    margin-bottom: 10px;
+    font-size: 0.95rem;
 }
 
-.membros_contador {
-    font-size: 14px;
+.grid_equipes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.card_equipe {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 28px 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    transition: 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card_equipe:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 26px rgba(0,0,0,0.10);
+}
+
+.icone_area {
+    width: 68px;
+    height: 68px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 18px auto;
+    transition: 0.3s ease;
+}
+
+.card_equipe:hover .icone_area {
+    transform: scale(1.08);
+}
+
+.nome_equipe {
+    font-size: 1.25rem;
     font-weight: 600;
-    color: #383D59;
+    margin-bottom: 6px;
+    color: #0f172a;
 }
 
-.descricao_equipe {
-    font-size: 13px;
-    color: #475569;
-    line-height: 1.4;
-    margin-top: 6px;
-    flex: 1;
+.area_equipe {
+    font-size: 0.9rem;
+    color: #2563eb;
+    font-weight: 500;
+    margin-bottom: 12px;
 }
+
+.desc_equipe {
+    font-size: 0.85rem;
+    color: #64748b;
+    line-height: 1.4;
+    margin-bottom: 18px;
+}
+
+.membros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #64748b;
+}
+
+.bg_blue { background: #3b82f6; }
+.bg_purple { background: #8b5cf6; }
+.bg_pink { background: #ec4899; }
+.bg_green { background: #22c55e; }
+.bg_red { background: #ef4444; }
+.bg_orange { background: #f97316; }
+

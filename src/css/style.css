@@ -198,16 +198,6 @@ header {
     gap: 16px;
 }
 
-.barra_publicacao {
-    background: #fff;
-    border: 1px solid #dfe3ea;
-    border-radius: 10px;
-    padding: 12px 16px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
 .linha_filtro {
     display: flex;
     align-items: center;
@@ -225,60 +215,159 @@ header {
     color: #475569;    
 }
 
-
-.avatar {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    background: #e2e8f0;
-    border: 1px solid #cbd5e1;
+.homefeed_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.barra_publicacao input {
-    flex: 1;
-    border: 1px solid #dfe3ea;
+.barra_publicacao {
+    background-color: #ffffff;
+    border: 1px solid #e6e9ee;
     border-radius: 10px;
-    padding: 10px 12px;
-    outline: none;
-}
-
-.post {
-    background: #fff;
-    border: 1px solid #dfe3ea;
-    border-radius: 10px;
-    padding: 16px;
+    padding: 12px 14px;
     box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
 }
 
-.post_cabecalho {
+.publicacao_header {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.avatar_post {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e6e9ef;
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
+    justify-content: center;
+    flex-shrink: 0;
 }
 
-.opcoes {
-    margin-left: auto;
-    background: none;
-    border: none;
+.post_input {
+    flex: 1;
+    border-radius: 10px;
+    border: 1px solid #e6e9ee;
+    padding: 10px 12px;
+    background: #fbfdff;
+    color: #0f172a;
+    outline: none;
+    font-size: 14px;
+}
+
+.post_input::placeholder {
+    color: #64748b;
+}
+
+.post_card {
+    background-color: #ffffff;
+    border: 1px solid #e6e9ee;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.post_card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.post_header {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.post_header .avatar {
+    width: 44px;
+    height: 44px;
+}
+
+.post_info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+
+.post_autor {
+    font-weight: 600;
+    font-size: 15px;
+    color: #0f172a;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.post_role {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.post_time {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.post_texto {
+    font-size: 15px;
+    color: #0f172a;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.post_acao {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    border-top: 1px solid #e6e9ee;
+    padding-top: 10px;
+}
+
+.icone_post {
+    width: 20px;
+    height: 20px;
+}
+
+.acao_btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #64748b;
+    font-size: 14px;
     cursor: pointer;
-    color: #94a3b8;
-    font-size: 18px;
+    border: 1px solid transparent;
+    transition: background 0.12s ease, color 0.12s ease, transform 0.12s ease;
 }
 
-.titulo {
-    font-size: 16px;
-    font-weight: 700;
-    margin: 6px 0 10px;
+.acao_btn:hover,
+.acao_btn:focus {
+    background-color: #f3f5f8;
+    color: #0f172a;
+    transform: translateY(-1px);
+    outline: none;
 }
 
-.demo {
-    height: 10px;
-    border-radius: 6px;
-    background: linear-gradient(90deg, #eef2f7, #f6f8fb, #eef2f7);
-    background-size: 200% 100%;
-    animation: shimmer 1.4s infinite;
-    margin: 8px 0;
+.acao_btn span {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.acao_btn.like-active {
+    color: #2563eb;
+}
+
+.acao_btn.like-active svg {
+    fill: #2563eb;
+    stroke: #2563eb;
 }
 
 @keyframes shimmer {
@@ -301,7 +390,7 @@ header {
 }
 
 .caixa_direita {
-    background: #fff;
+    background-color: #fff;
     border: 1px solid #dfe3ea;
     border-radius: 10px;
     padding: 16px;
@@ -309,9 +398,11 @@ header {
     box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
 }
 
-.caixa_direita .avatar {
+.avatar {
     width: 78px;
     height: 78px;
+    background-color: #e6e9ef;
+    border-radius: 50%;
     margin-bottom: 8px;
 }
 
@@ -376,7 +467,7 @@ header {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background: #e2e8f0;
+    background-color: #e2e8f0;
 }
 
 .caixa_pequena {
