@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pesquisa de Satisfação</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/quiz.css">
+  <link rel="stylesheet" href="../js/quiz.js">
+
+
+  
+</head>
+<body>
+     <header class="topo">
+        <div class="header_container">
+            <div class="header_logo">
+                <img src="../assets/logo.jpeg" alt="" class="logo_icone"/>
+            </div>
+            <div class="header_search">
+                <input type="text" placeholder="Pesquisar..." />
+                <span class="search_icon">
+                    <svg width="18" height="18" fill="#c5c7e5" viewBox="0 0 24 24">
+                        <path d="M10 2a8 8 0 015.292 13.708l4.5 4.5-1.415 1.414-4.5-4.5A8 8 0 1110 2zm0 2a6 6 0 100 12 6 6 0 000-12z"/>
+                    </svg>
+                </span>
+            </div>
+            <nav class="header_menu">
+                <a href="/index.html">
+                    <button class="menu_btn">
+                        <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M3 10l9-7 9 7v10a2 2 0 01-2 2h-4a2 2 0 01-2-2v-4H9v4a2 2 0 01-2 2H3z"/>
+                        </svg>
+                    </button>
+                </a>
+                <a href="./notificacoes.html">
+                    <button class="menu_btn">
+                        <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2a6 6 0 00-6 6v4.586L4.293 15.293 5.707 16.707 7 15.414V16a5 5 0 0010 0v-.586l1.293 1.293 1.414-1.414L18 12.586V8a6 6 0 00-6-6z"/>
+                        </svg>
+                    </button>
+                </a>
+                <button class="menu_btn">
+                    <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 12a5 5 0 100-10 5 5 0 000 10zm-9 9a9 9 0 1118 0H3z"/>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="box_principal">
+           <section class="coluna_esquerda">
+                <aside class="lado_esquerdo">
+                    <div class="logo_icone">W</div>
+                    <strong>WorkWellS</strong>
+                    <div class="barra_pesquisa">
+                        <span class="pesquisa_icone">
+                            <svg width="16" height="16" fill="#94a3b8" viewBox="0 0 24 24">
+                                <path d="M10 2a8 8 0 015.292 13.708l4.5 4.5-1.415 1.414-4.5-4.5A8 8 0 1110 2zm0 2a6 6 0 100 12 6 6 0 000-12z"/>
+                            </svg>
+                        </span>
+                        <input type="text" placeholder="Pesquisar" aria-label="Pesquisar"/>
+                    </div>
+                    <nav class="navegador">
+                        <a href="/index.html">Home</a>
+                        <a href="./acompanhamentos.html">Colaboradores</a>
+                        <a href="./equipes.html">Equipes</a>
+                        <a href="./acompanhamentos.html">Acompanhamentos</a>
+                        <a href="notificacoes.html">Notificações</a>
+                        <a href="quiz.html">Quiz</a>
+                       
+                    </nav>
+                </aside>
+            </section>
+            
+            <section class="coluna_centro">
+              <section class="painel">
+                <div class="cabecalho">
+                  <div class="sub">Responda ao Quiz da WorkWell!</div>
+                </div>
+
+                <div class="cartao" role="form" aria-labelledby="titulo">
+                  <h2 id="titulo">
+                    MINHA EXPERIÊNCIA NO TRABALHO <span class="selo">WorkWell • Bem-estar e engajamento que transformam!</span>
+                  </h2>
+
+                  <div class="pergunta">
+                    <p class="rotulo">Qual seu nível de <strong>conforto físico</strong> no local de trabalho? <span class="dica">(1 = muito desconfortável; 5 = extremamente confortável)</span></p>
+                    <div class="escala" data-grupo="conforto">
+                      <span class="opcao-escala"><input type="radio" name="conforto" id="c1" value="1"><label for="c1">1</label></span>
+                      <span class="opcao-escala"><input type="radio" name="conforto" id="c2" value="2"><label for="c2">2</label></span>
+                      <span class="opcao-escala"><input type="radio" name="conforto" id="c3" value="3"><label for="c3">3</label></span>
+                      <span class="opcao-escala"><input type="radio" name="conforto" id="c4" value="4"><label for="c4">4</label></span>
+                      <span class="opcao-escala"><input type="radio" name="conforto" id="c5" value="5"><label for="c5">5</label></span>
+                    </div>
+                    <div class="resposta">Sua resposta: <span data-resposta="conforto">—</span></div>
+                  </div>
+
+                  <div class="pergunta">
+                    <p class="rotulo">Você sente que tem os <strong>recursos e ferramentas</strong> necessários para realizar suas tarefas?</p>
+                    <div class="opcoes">
+                      <label class="opcao"><input type="radio" name="recursos" value="completos"> Sim, tudo que preciso está disponível</label>
+                      <label class="opcao"><input type="radio" name="recursos" value="quase"> Tenho quase tudo, mas falta algo importante</label>
+                      <label class="opcao"><input type="radio" name="recursos" value="faltando"> Não, sinto falta de vários recursos</label>
+                    </div>
+                    <div class="resposta">Sua resposta: <span data-resposta="recursos">—</span></div>
+                  </div>
+
+                
+                  <div class="pergunta">
+                    <p class="rotulo">Como você avalia a <strong>colaboração e comunicação</strong> com seus colegas?</p>
+                    <div class="opcoes">
+                      <label class="opcao"><input type="radio" name="colaboracao" value="excelente"> Excelente — trabalhamos muito bem juntos</label>
+                      <label class="opcao"><input type="radio" name="colaboracao" value="boa"> Boa — mas pode melhorar</label>
+                      <label class="opcao"><input type="radio" name="colaboracao" value="dificil"> Difícil — há ruídos de comunicação</label>
+                    </div>
+                    <div class="resposta">Sua resposta: <span data-resposta="colaboracao">—</span></div>
+                  </div>
+
+                
+                  <div class="pergunta">
+                    <p class="rotulo">Você se sente <strong>respeitado(a) e valorizado(a)</strong> pela equipe?</p>
+                    <div class="opcoes">
+                      <label class="opcao"><input type="radio" name="valor" value="totalmente"> Sim, totalmente</label>
+                      <label class="opcao"><input type="radio" name="valor" value="as_vezes"> Às vezes</label>
+                      <label class="opcao"><input type="radio" name="valor" value="nao"> Não me sinto valorizado(a)</label>
+                    </div>
+                    <div class="resposta">Sua resposta: <span data-resposta="valor">—</span></div>
+                  </div>
+
+              
+                  <div class="pergunta">
+                    <p class="rotulo">Como está o <strong>clima organizacional</strong> no seu setor?</p>
+                    <div class="opcoes">
+                      <label class="opcao"><input type="radio" name="clima" value="positivo"> Positivo e motivador</label>
+                      <label class="opcao"><input type="radio" name="clima" value="neutro"> Neutro</label>
+                      <label class="opcao"><input type="radio" name="clima" value="negativo"> Negativo — precisa melhorar</label>
+                    </div>
+                    <div class="resposta">Sua resposta: <span data-resposta="clima">—</span></div>
+                  </div>
+
+                
+                  <div class="pergunta">
+                    <p class="rotulo">Tem alguma <strong>necessidade específica</strong> para melhorar seu bem‑estar?</p>
+                    <textarea name="necessidades" rows="3" placeholder="Conte para a gente..."></textarea>
+                    <div class="resposta">Sua resposta: <span data-resposta="necessidades">—</span></div>
+                  </div>
+
+                
+                  <div class="pergunta">
+                    <p class="rotulo">Que <strong>sugestões</strong> você daria para aprimorar o ambiente e as relações?</p>
+                    <textarea name="sugestoes" rows="3" placeholder="Ex.: rodas de conversa, ajustes no escritório, treinamentos..."></textarea>
+                    <div class="resposta">Sua resposta: <span data-resposta="sugestoes">—</span></div>
+                  </div>
+
+                
+                  <div class="area-acao">
+                    <button class="botao" id="btnEnviar">OBRIGADO! GERAR RECOMENDAÇÃO WORKWELL 💚</button>
+                    <div id="resultado" class="resultado" role="status" aria-live="polite"></div>
+                  </div>
+                </div>
+
+                <footer class="rodape">WorkWell • Pesquisa de Satisfação do Ambiente de Trabalho</footer>
+                <script src="../js/quiz.js"></script>
+              </section>
+            </section>
+             <section class="coluna_direita">
+            <aside class="caixa_direita">
+                <div class="painel">
+                    <img src="../assets/foto2.png" alt="icone de usuario" class="avatar"/>
+                    <div class="nome_perfil">Usuário</div>
+                    <div class="atribuicao">Analista</div>
+                    <button class="botao">Ver perfil</button>
+                </div>
+            </aside>
+            <section class="sessao_mensagem">
+                <h3>Mensagens recebidas</h3>
+
+                <div class="lista_mensagens">
+                    <div class="mensagem">
+                        <img src="../assets/foto1.png" class="avatar_mensagem"/>
+                        <div>
+                            <strong>Ana Paula</strong>
+                            <p class="caixa_pequena">Oi! Gostei do seu último post 😄</p>
+                        </div>
+                    </div>
+
+                    <div class="mensagem">
+                        <img src="../assets/foto2.png" class="avatar_mensagem"/>
+                        <div>
+                            <strong>Lucas Henrique</strong>
+                            <p class="caixa_pequena">Podemos conversar sobre a vaga?</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="botao_mensagens">Ver todas</button>
+             </section>
+  </main>
+</body>
+</html>
