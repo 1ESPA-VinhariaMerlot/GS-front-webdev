@@ -12,7 +12,7 @@
   
 </head>
 <body>
-     <header class="topo">
+      <header class="topo">
         <div class="header_container">
             <div class="header_logo">
                 <img src="../assets/logo.jpeg" alt="" class="logo_icone"/>
@@ -47,7 +47,7 @@
                 </button>
             </nav>
         </div>
-    </header>
+      </header>
     <main>
         <div class="box_principal">
            <section class="coluna_esquerda">
@@ -73,9 +73,9 @@
                     </nav>
                 </aside>
             </section>
-            
+  
             <section class="coluna_centro">
-              <section class="painel">
+              <section class="painel_quiz">
                 <div class="cabecalho">
                   <div class="sub">Responda ao Quiz da WorkWell!</div>
                 </div>
@@ -165,37 +165,59 @@
                 <script src="../js/quiz.js"></script>
               </section>
             </section>
-             <section class="coluna_direita">
-            <aside class="caixa_direita">
-                <div class="painel">
-                    <img src="../assets/foto2.png" alt="icone de usuario" class="avatar"/>
-                    <div class="nome_perfil">Usuário</div>
-                    <div class="atribuicao">Analista</div>
-                    <button class="botao">Ver perfil</button>
-                </div>
-            </aside>
-            <section class="sessao_mensagem">
-                <h3>Mensagens recebidas</h3>
-
-                <div class="lista_mensagens">
-                    <div class="mensagem">
-                        <img src="../assets/foto1.png" class="avatar_mensagem"/>
+            <section class="coluna_direita">
+                <aside class="caixa_direita">
+                    <div class="painel">
+                        <img src="../assets/foto2.png" alt="icone de usuario" class="avatar" aria-hidden="true"/>
+                        <div class="nome_perfil">Usuário</div>
+                        <div class="atribuicao">Analista</div>
+                        <div class="status"></div>
                         <div>
-                            <strong>Ana Paula</strong>
-                            <p class="caixa_pequena">Oi! Gostei do seu último post 😄</p>
+                            <strong>200</strong><br />
+                            <span class="atribuicao">conexões</span>
+                        </div>
+                        <div>
+                            <strong>15</strong><br />
+                            <span class="atribuicao">conquistas</span>
+                        </div>
+                        <div>
+                            <strong>3</strong><br />
+                            <span class="atribuicao">feedbacks</span>
+                        </div>
+                        <button class="botao">Ver perfil</button>
+                    </div>
+                </aside>
+                <section class="sessao_mensagem" aria-labelledby="titulo_mensagens">
+                    <h3 id="titulo_mensagens">Mensagens recebidas</h3>
+                    <div class="lista_mensagens">
+                        <div class="mensagem">
+                            <img src="../assets/foto1.png" alt="icone de usuario" class="avatar_mensagem" aria-hidden="true"/>
+                            <div>
+                                <strong>Ana Paula</strong>
+                                <p class="caixa_pequena">Oi! Gostei do seu último post 😄</p>
+                            </div>
+                        </div>
+
+                        <div class="mensagem">
+                            <img src="../assets/foto2.png" alt="icone de usuario" class="avatar_mensagem" aria-hidden="true"/>
+                            <div>
+                                <strong>Lucas Henrique</strong>
+                                <p class="caixa_pequena">Podemos conversar sobre a vaga?</p>
+                            </div>
+                        </div>
+
+                        <div class="mensagem">
+                            <img src="../assets/foto4.png" alt="icone de usuario" class="avatar_mensagem" aria-hidden="true"/>
+                            <div>
+                                <strong>Equipe RH</strong>
+                                <p class="caixa_pequena">Reunião de feedback amanhã às 10h.</p>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="mensagem">
-                        <img src="../assets/foto2.png" class="avatar_mensagem"/>
-                        <div>
-                            <strong>Lucas Henrique</strong>
-                            <p class="caixa_pequena">Podemos conversar sobre a vaga?</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="botao_mensagens">Ver todas</button>
-             </section>
+                    <button class="botao_mensagens">Ver todas</button>
+                </section>
+          </section>
+        </div>
   </main>
 </body>
 </html>

@@ -89,7 +89,9 @@
     font-weight: 500;
 }
 
-button {
+.btn_azul {
+    background-color: #383D59;
+    color: white;
     padding: 10px;
     font-size: 0.875rem;
     font-weight: 500;
@@ -100,11 +102,6 @@ button {
     transition: 0.3s;
 }
 
-.btn_azul {
-    background-color: #383D59;
-    color: white;
-}
-
 .btn_azul:hover {
     background-color: #383d5989;
 }
@@ -112,6 +109,14 @@ button {
 .btn {
     background: #e2e8f0;
     color: #334155;
+    padding: 10px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
 }
 
 .btn:hover {
