@@ -2,5 +2,5 @@ Marianne Mukai -  568001
 Giovanna Dias - 566647
 Maria Laura Druzeic - 566634
 
-Link Repositório:
-Link Gitpages:
+Link Repositório: https://github.com/1ESPA-VinhariaMerlot/GS-front-webdev
+Link Gitpages: https://1espa-vinhariamerlot.github.io/GS-front-webdev/
