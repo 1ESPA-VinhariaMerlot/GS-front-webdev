@@ -1,0 +1,87 @@
+body {
+    background: #191b33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial;
+}
+
+.login_card {
+    background: #ffffff;
+    width: 360px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.18);
+    text-align: center;
+}
+
+.login_logo {
+    font-size: 38px;
+    font-weight: 800;
+    color: #8383bc;
+    margin-bottom: 4px;
+}
+
+.login_sub {
+    color: #475569;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.campo {
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.campo label {
+    display: block;
+    font-weight: 600;
+    color: #383D59;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #dfe3ea;
+    outline: none;
+    background: #fbfdff;
+    transition: 0.2s;
+}
+
+.campo input:focus {
+    border-color: #8383bc;
+    box-shadow: 0 0 3px #8383bc90;
+}
+
+.botao_login {
+    width: 100%;
+    background: #191b33;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    border-radius: 10px;
+    font-weight: 700;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.botao_login:hover {
+    background: #8383bc;
+}
+
+.link_criar {
+    display: block;
+    margin-top: 14px;
+    font-size: 14px;
+    color: #383D59;
+    text-decoration: none;
+}
+
+.link_criar:hover {
+    text-decoration: underline;
+}
